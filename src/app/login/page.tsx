@@ -1,3 +1,4 @@
+// Página de login, acessível apenas para usuários não autenticados
 import { cookies } from "next/headers"
 import { redirect } from "next/navigation"
 import LoginForm from "@/src/components/LoginForm"

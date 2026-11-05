@@ -1,3 +1,4 @@
+// Página de gerenciamento de usuários, acessível apenas para usuarios autenticados
 import { cookies } from "next/headers"
 import { redirect } from "next/navigation"
 import UsuariosTable from "@/src/components/UsuariosTable"

@@ -1,3 +1,4 @@
+// Pagina de perfil do usuário, acessível apenas para usuários autenticados
 import { cookies } from "next/headers"
 import { redirect } from "next/navigation"
 import LogoutButton from "@/src/components/LogoutButton"

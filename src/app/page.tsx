@@ -1,3 +1,4 @@
+// Página inicial do sistema, acessível para todos os usuários
 import { cookies } from "next/headers"
 import Link from "next/link"
 import { verifyAccessToken } from "@/src/lib/auth"
