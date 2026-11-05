@@ -84,9 +84,13 @@ export default function UsuarioForm({ usuario }: { usuario?: IUsuario }) {
 
     setSalvando(true)
     try {
-      if (usuario?.id) await atualizarUsuario(usuario.id, form)
-      else await criarUsuario(form)
-      router.push("/usuarios")
+      if (usuario?.id) {
+        await atualizarUsuario(usuario.id, form)
+        router.push("/usuarios")
+      } else {
+        await criarUsuario(form)
+        router.push("/login")
+      }
     } catch {
       alert("Erro ao salvar usuário")
       setSalvando(false)
@@ -127,7 +131,7 @@ export default function UsuarioForm({ usuario }: { usuario?: IUsuario }) {
           <button type="submit" disabled={salvando} className="rounded-xl bg-cyan-400 px-5 py-3 font-semibold text-slate-950 transition hover:bg-cyan-300 disabled:opacity-50">
             {salvando ? "Salvando..." : "Salvar"}
           </button>
-          <button type="button" onClick={() => router.push("/usuarios")} className="rounded-xl border border-white/15 px-5 py-3 font-semibold text-slate-200 transition hover:bg-white/10">
+          <button type="button" onClick={() => router.push(usuario ? "/usuarios" : "/")} className="rounded-xl border border-white/15 px-5 py-3 font-semibold text-slate-200 transition hover:bg-white/10">
             Cancelar
           </button>
         </div>

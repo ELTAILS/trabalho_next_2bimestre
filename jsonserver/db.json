@@ -24,6 +24,21 @@
       "cidade": "maria helena",
       "estado": "PR",
       "id": 1
+    },
+    {
+      "nome": "Wagner Junior",
+      "email": "wagnerteste@gmail.com",
+      "cpf": "489.003.310-60",
+      "telefone": "(15) 61951-9519",
+      "dataNascimento": "30/06/2006",
+      "senha": "753159",
+      "cep": "08008-000",
+      "rua": "são martinho",
+      "numero": "260",
+      "bairro": "centro",
+      "cidade": "maria helena",
+      "estado": "PR",
+      "id": 2
     }
   ]
 }

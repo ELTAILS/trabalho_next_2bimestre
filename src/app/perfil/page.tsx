@@ -20,6 +20,21 @@ export default async function PerfilPage() {
           <LogoutButton />
         </div>
 
+        <div className="mt-8 flex flex-wrap gap-3">
+          <a
+            href="/usuarios"
+            className="rounded-xl bg-cyan-600 px-5 py-3 font-semibold text-white transition hover:bg-cyan-700"
+          >
+            Painel admin
+          </a>
+          <a
+            href="/"
+            className="rounded-xl border border-slate-300 px-5 py-3 font-semibold transition hover:bg-white"
+          >
+            Voltar para home
+          </a>
+        </div>
+
         <div className="mt-10 rounded-3xl bg-white p-8 shadow-sm">
           <h2 className="text-xl font-semibold">Meu perfil</h2>
           <div className="mt-6 grid gap-5 sm:grid-cols-2">
