@@ -1,0 +1,29 @@
+{
+  "categorias": [
+    {
+      "id": 1,
+      "categoria": "Pen Drive"
+    },
+    {
+      "id": 2,
+      "categoria": "Mouse"
+    }
+  ],
+  "usuarios": [
+    {
+      "nome": "wagner",
+      "email": "wagner@gmail.com",
+      "cpf": "993.010.520-40",
+      "telefone": "(44) 84561-2312",
+      "dataNascimento": "30/06/2006",
+      "senha": "753159",
+      "cep": "08004-080",
+      "rua": "são martinho",
+      "numero": "260",
+      "bairro": "centro",
+      "cidade": "maria helena",
+      "estado": "PR",
+      "id": 1
+    }
+  ]
+}
